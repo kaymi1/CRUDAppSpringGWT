@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+             http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="people">
+        <description>Hibernate EntityManager Demo</description>
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>ru.fil.gwt.server.domain.Person</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL94Dialect"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/peopleDB"/>
+            <property name="javax.persistence.jdbc.user" value="alex"/>
+            <property name="javax.persistence.jdbc.password" value="692312369q"/>
+        </properties>
+    </persistence-unit>
+</persistence>

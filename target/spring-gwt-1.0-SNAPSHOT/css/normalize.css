@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%
+}
+
+.wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons{
+
+}
+
+.table{
+
+}
